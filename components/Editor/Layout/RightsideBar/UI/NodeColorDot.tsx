@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { DEFAULT_COLORS } from '@/constants/editor.constant';
 import { INodeColorDotProps } from '@/types/editor.interfaces';
 

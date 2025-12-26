@@ -1,11 +1,11 @@
 import { RIGHT_SIDEBAR_TYPES } from '@/constants/editor.constant'
 
-import { PropertiesTab } from '@/components/Editor/Layout/RightsideBar/Tabs/PropertiesTab';
-import { LayersTab } from '@/components/Editor/Layout/RightsideBar/Tabs/LayersTab';
-import { JSONTab } from '@/components/Editor/Layout/RightsideBar/Tabs/JSONTab';
-import { RightSidebarProxyProps } from '@/types/editor.interfaces'; 
+import { PropertiesTab } from '@/components/Editor/Layout/RightsideBar/Tabs/PropertiesTab/PropertiesTab';
+import { LayersTab } from '@/components/Editor/Layout/RightsideBar/Tabs/LayersTab/LayersTab';
+import { JSONTab } from '@/components/Editor/Layout/RightsideBar/Tabs/JSONTab/JSONTab';
+import { IRightSidebarProxyProps } from '@/types/editor.interfaces'; 
 
-export function RightSidebarProxy({ activeTab }: RightSidebarProxyProps){
+export function RightSidebarProxy({ activeTab }: IRightSidebarProxyProps){
 
     const RenderTab = () => {
         switch (activeTab) {

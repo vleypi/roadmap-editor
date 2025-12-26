@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RoadmapFlow",
+  title: "RoadmapEditor",
   description: "Visualize your roadmaps with elegance",
 };
 

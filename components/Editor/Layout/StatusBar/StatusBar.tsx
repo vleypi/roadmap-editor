@@ -2,7 +2,7 @@
 import { useEditorStore } from '@/store/editore.store'
 
 
-export default function StatusBar() {
+export function StatusBar() {
     const { 
         nodes, 
         connections, 

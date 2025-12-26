@@ -1,4 +1,3 @@
-import React from 'react';
 import { IEmptyStateProps } from '@/types/editor.interfaces';
 
 

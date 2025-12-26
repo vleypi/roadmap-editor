@@ -1,10 +1,7 @@
-// app/editor/page.tsx
-'use client'
-
-import CanvasArea from '@/components/Editor/Canvas/CanvasArea'
-import RightSidebar from '@/components/Editor/Layout/RightsideBar/RightsideBar'
-import TopBar from '@/components/Editor/Layout/TopBar/TopBar'
-import StatusBar from '@/components/Editor/Layout/StatusBar/StatusBar'
+import { CanvasArea } from '@/components/Editor/Elements/Canvas/CanvasArea'
+import { RightSidebar } from '@/components/Editor/Layout/RightsideBar/RightsideBar'
+import { TopBar } from '@/components/Editor/Layout/TopBar/TopBar'
+import { StatusBar } from '@/components/Editor/Layout/StatusBar/StatusBar'
 
 export default function EditorPage() {
     return (

@@ -1,8 +1,8 @@
 'use client'
 
-import { useDragAndDrop } from '@/hooks/useDragAndDrop'
-import { useFileUpload } from '@/hooks/useFileUpload'
-import { useExampleRoadmap } from '@/hooks/useExampleRoadmap'
+import { useDragAndDrop } from '@/hooks/Upload/useDragAndDrop'
+import { useFileUpload } from '@/hooks/Upload/useFileUpload'
+import { useExampleRoadmap } from '@/hooks/Upload/useExampleRoadmap'
 
 import { UploadDropZone } from '@/components/Main/Elements/Upload/UploadDropZone'
 import { UploadContent } from '@/components/Main/Elements/Upload/UploadContent'

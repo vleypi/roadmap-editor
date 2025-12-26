@@ -8,15 +8,20 @@ import { HEADER_LINKS } from '@/constants/layout.constant'
 export function Header() {
   const pathname = usePathname()
 
-  const renderNavLinks = HEADER_LINKS.map((link) => (
-    <Link 
-      key={link.href} 
-      href={link.href} 
-      className={`px-4 py-2 rounded-xl transition-all ${(pathname === link.href || pathname?.startsWith(link.href) ) ? 'text-white bg-white/5' : 'text-night-300 hover:text-white hover:bg-white/5'}`}
-    >
-      {link.label}
-    </Link>
-  ))
+  const renderNavLinks = HEADER_LINKS.map((link) => {
+    const isActive = link.href === '/'
+      ? pathname === '/' 
+      : pathname?.startsWith(link.href) 
+    return (
+      <Link
+        key={link.href}
+        href={link.href}
+        className={`px-4 py-2 rounded-xl transition-all ${isActive ? 'text-white bg-white/5' : 'text-night-300 hover:text-white hover:bg-white/5'}`}
+      >
+        {link.label}
+      </Link>
+    )
+  })
 
   return (
     <nav className="fixed w-full z-50 px-6 py-5">

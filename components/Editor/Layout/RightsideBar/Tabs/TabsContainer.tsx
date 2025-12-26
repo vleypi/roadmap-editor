@@ -1,9 +1,9 @@
 'use client'
 
 import { RIGHT_SIDEBAR_TYPES, TAB_ICONS, SECTION_TITLES } from '@/constants/editor.constant'
-import { TabsProps } from '@/types/editor.interfaces'
+import { ITabsProps } from '@/types/editor.interfaces'
 
-const Tabs = ({ activeTab, setActiveTab }: TabsProps) => {
+export function Tabs ({ activeTab, setActiveTab }: ITabsProps) {
     const tabMap = Object.values(RIGHT_SIDEBAR_TYPES).map((tabType) => (
         <button
           type="button"
@@ -27,5 +27,3 @@ const Tabs = ({ activeTab, setActiveTab }: TabsProps) => {
         </div>
     )
 }
-
-export default Tabs

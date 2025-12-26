@@ -1,4 +1,3 @@
-import React from 'react';
 import { IActionButtonProps } from '@/types/editor.interfaces';
 
 

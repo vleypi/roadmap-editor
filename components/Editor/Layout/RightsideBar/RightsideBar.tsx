@@ -1,5 +1,7 @@
-import { useChooseTab } from '@/hooks/useChooseTab';
-import Tabs from '@/components/Editor/Layout/RightsideBar/Tabs/TabsContainer';
+'use client'
+
+import { Tabs } from '@/components/Editor/Layout/RightsideBar/Tabs/TabsContainer';
+import { useChooseTab } from '@/hooks/RightsideBar/useChooseTab';
 import { RightSidebarProxy } from '@/components/Editor/Layout/RightsideBar/RightsideBarProxy'
 
 export function RightSidebar(){
@@ -11,5 +13,3 @@ export function RightSidebar(){
         </div>
     );
 };
-
-export default RightSidebar;

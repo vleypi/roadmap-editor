@@ -8,7 +8,7 @@ export default function HomePage() {
       <main className="relative pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <section className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
+            <div className="inline-flex items-center px-4 py-2 rounded-2xl bg-white/5 border border-white/10 mb-8">
               <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mr-2 animate-pulse"></span>
               <span className="text-sm font-medium">No signup required • 100% free</span>
             </div>
@@ -140,9 +140,7 @@ export default function HomePage() {
               </div>
               <span className="text-night-400 text-sm font-mono">roadmap.json</span>
             </div>
-            <button className="text-night-400 hover:text-white transition-colors" aria-label="Copy code">
-              <i className="far fa-copy text-lg"></i>
-            </button>
+
           </div>
           
           <pre className="text-sm font-mono overflow-auto">
@@ -211,14 +209,13 @@ export default function HomePage() {
   </div>
 </section>
 
-          {/* CTA секция */}
           <section className="text-center">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-blue-500/20 to-cyan-500/20 blur-3xl rounded-3xl"></div>
               <div className="relative glass-panel rounded-3xl p-12">
                 <h2 className="font-display text-4xl font-bold mb-6">Ready to visualize?</h2>
                 <p className="text-xl text-night-400 mb-10 max-w-2xl mx-auto">
-                Join RoadmapFlow to create beautiful, shareable roadmaps in minutes..
+                Join RoadmapEditor to create beautiful, shareable roadmaps in minutes..
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <Link href="/editor" className="relative group/btn">
@@ -228,9 +225,10 @@ export default function HomePage() {
                       Try Live Demo
                     </div>
                   </Link>
-                  {/* <Link href="/docs" className="px-10 py-4 bg-white/5 border border-night-700 text-night-300 rounded-xl font-medium hover:bg-white/10 hover:text-white hover:border-night-600 transition-all text-lg flex items-center justify-center">
+                  <Link href="/docs" className="px-10 py-4 bg-white/5 border border-night-700 text-night-300 rounded-xl font-medium hover:bg-white/10 hover:text-white hover:border-night-600 transition-all text-lg flex items-center justify-center">
+                    <i className="fas fa-book mr-2"></i>
                     Read Documentation
-                  </Link> */}
+                  </Link>
                 </div>
                 <p className="text-night-500 mt-10 text-sm">
                   <i className="fas fa-lock mr-2"></i>

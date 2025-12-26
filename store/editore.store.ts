@@ -1,9 +1,9 @@
 import { create } from 'zustand'
 
-import { Node, Connection, Viewport} from '@/types/editor.interfaces'
-import type { EditorStore } from '@/types/editor.types'
+import { INode, IConnection} from '@/types/editor.interfaces'
+import type { TEditorStore } from '@/types/editor.types'
 
-export const useEditorStore = create<EditorStore>((set, get) => ({
+export const useEditorStore = create<TEditorStore>((set, get) => ({
   viewport: { x: 800, y: 425, scale: 1 },
   nodes: [],
   connections: [],
@@ -22,7 +22,7 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
   clearSelection: () => set({ selectedNodeId: null }),
   
   addNode: (nodeData) => set((state) => {
-    const newNode: Node = {
+    const newNode: INode = {
       ...nodeData,
       id: `node-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
     }
@@ -94,7 +94,7 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
       return state
     }
     
-    const newConnection: Connection = {
+    const newConnection: IConnection = {
       ...connectionData,
       id: `conn-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
     }
@@ -138,7 +138,7 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
       return { ...state, connectingNodeId: null }
     }
 
-    const newConnection: Connection = {
+    const newConnection: IConnection = {
       id: `conn-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       sourceId: state.connectingNodeId,
       targetId: targetNodeId,

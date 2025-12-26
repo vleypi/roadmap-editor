@@ -1,18 +1,18 @@
 import { IFooterLink, IFooterSection, IFooterSocial, IHeaderLink } from "@/types/layout.interface";
 
 export const HEADER_LINKS: IHeaderLink[] = [
-    { 
-        href: '/', 
-        label: 'Home', 
-    },
-    { 
-        href: '/examples', 
-        label: 'Examples', 
-    },
-    { 
-        href: '/docs', 
-        label: 'Docs', 
-    }
+    // { 
+    //     href: '/', 
+    //     label: 'Home', 
+    // },
+    // { 
+    //     href: '/examples', 
+    //     label: 'Examples', 
+    // },
+    // { 
+    //     href: '/docs', 
+    //     label: 'Docs', 
+    // }
 ] as const;
 
 
@@ -23,10 +23,7 @@ export const FOOTER_PRODUCT_LINKS: IFooterLink[] = [
 
 const FOOTER_RESOURCES_LINKS: IFooterLink[] = [
     { label: 'Documentation', href: '/docs' },
-    // { label: 'API Reference', href: '#' },
-    // { label: 'Templates', href: '#' },
-    // { label: 'Help Center', href: '#' }
-  ]
+]
 
 const FOOTER_COMPANY_LINKS: IFooterLink[] = [
     { label: 'About', href: '#' },
@@ -41,6 +38,4 @@ export const FOOTER_SOCIAL_LINKS: IFooterSocial[]= [
 
 export const FOOTER_SECTIONS: IFooterSection[]  = [
     { title: 'Product', links: FOOTER_PRODUCT_LINKS },
-    // { title: 'Resources', links: FOOTER_RESOURCES_LINKS },
-    // { title: 'Company', links: FOOTER_COMPANY_LINKS }
 ]

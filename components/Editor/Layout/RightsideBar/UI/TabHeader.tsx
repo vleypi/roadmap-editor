@@ -1,4 +1,3 @@
-import React from 'react';
 import { ITabHeaderProps } from '@/types/editor.interfaces';
 
 export const TabHeader: React.FC<ITabHeaderProps> = ({ title, actions }) => (

@@ -1,14 +1,14 @@
-import { Node, Connection, Viewport, ExportData } from "@/types/editor.interfaces";
+import { INode, IConnection, IViewport, IExportData } from "@/types/editor.interfaces";
 
 
 export const exportJson = (
   title: string,
-  nodes: Node[],
-  connections: Connection[],
-  viewport: Viewport,
+  nodes: INode[],
+  connections: IConnection[],
+  viewport: IViewport,
   description?: string
 ): void => {
-  const exportData: ExportData = {
+  const exportData: IExportData = {
     title: title || "Roadmap",
     description,
     nodes: nodes.map(node => ({
@@ -41,12 +41,12 @@ export const exportJson = (
 
 export const getJsonString = (
   title: string,
-  nodes: Node[],
-  connections: Connection[],
-  viewport: Viewport,
+  nodes: INode[],
+  connections: IConnection[],
+  viewport: IViewport,
   description?: string
 ): string => {
-  const exportData: ExportData = {
+  const exportData: IExportData = {
     title: title || "Roadmap",
     description,
     nodes: nodes.map(node => ({

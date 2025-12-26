@@ -42,7 +42,7 @@ export function Footer() {
                   <i className="fas fa-map text-white"></i>
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-bold">RoadmapFlow</h3>
+                  <h3 className="font-display text-xl font-bold">RoadmapEditor</h3>
                   <p className="text-night-500 text-sm">Visualize with elegance</p>
                 </div>
               </div>
