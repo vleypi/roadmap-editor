@@ -17,8 +17,8 @@ export const HEADER_LINKS: IHeaderLink[] = [
 
 
 export const FOOTER_PRODUCT_LINKS: IFooterLink[] = [
-    { label: 'Features', href: '#' },
-    { label: 'Examples', href: '/examples' },
+//     { label: 'Features', href: '#' },
+//     { label: 'Examples', href: '/examples' },
 ]
 
 const FOOTER_RESOURCES_LINKS: IFooterLink[] = [

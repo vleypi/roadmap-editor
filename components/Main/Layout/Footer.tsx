@@ -2,22 +2,22 @@ import { FOOTER_SECTIONS } from "@/constants/layout.constant"
 import { FOOTER_SOCIAL_LINKS } from "@/constants/layout.constant"
   
 export function Footer() {
-    const renderFooterSections = () => {
-      return FOOTER_SECTIONS.map((section, index) => (
-        <div key={section.title + "_" + index}>
-          <h4 className="font-display font-bold mb-6">{section.title}</h4>
-          <ul className="space-y-3">
-            {section.links.map((link) => (
-              <li key={link.label}>
-                <a href={link.href} className="text-night-400 hover:text-white transition-colors text-sm">
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))
-    }
+    // const renderFooterSections = () => {
+    //   return FOOTER_SECTIONS.map((section, index) => (
+    //     <div key={section.title + "_" + index}>
+    //       <h4 className="font-display font-bold mb-6">{section.title}</h4>
+    //       <ul className="space-y-3">
+    //         {section.links.map((link) => (
+    //           <li key={link.label}>
+    //             <a href={link.href} className="text-night-400 hover:text-white transition-colors text-sm">
+    //               {link.label}
+    //             </a>
+    //           </li>
+    //         ))}
+    //       </ul>
+    //     </div>
+    //   ))
+    // }
   
     const renderSocialLinks = () => {
       return FOOTER_SOCIAL_LINKS.map((social) => (
@@ -46,11 +46,11 @@ export function Footer() {
                   <p className="text-night-500 text-sm">Visualize with elegance</p>
                 </div>
               </div>
-              <p className="text-night-500 text-sm leading-relaxed">
+              {/* <p className="text-night-500 text-sm leading-relaxed">
                 A tool for designers, product managers, and engineers to create stunning roadmap visualizations.
-              </p>
+              </p> */}
             </div>
-            {renderFooterSections()}
+            {/* {renderFooterSections()} */}
           </div>
           <div className="pt-8 border-t border-night-800 flex flex-col md:flex-row justify-between items-center">
             <div className="text-night-500 text-sm mb-4 md:mb-0">
