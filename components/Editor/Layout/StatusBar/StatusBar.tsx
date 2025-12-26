@@ -1,5 +1,5 @@
 'use client'
-import { useEditorStore } from '@/store/editore.store'
+import { useEditorStore } from '@/store/editor.store'
 
 
 export function StatusBar() {

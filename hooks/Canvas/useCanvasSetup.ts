@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 import { useNodeDragDrop } from '@/hooks/Canvas/useNodeDragAndDrop';
 import { useConnectionManager } from '@/hooks/Canvas/useConnectionManager';
 import { useViewportControls } from '@/hooks/Canvas/useViewportControls';

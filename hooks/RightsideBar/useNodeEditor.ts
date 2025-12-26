@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 import { INodeFormData } from '@/types/editor.interfaces';
 import { DEFAULT_NODE_FORM, DEFAULT_COLORS } from '@/constants/editor.constant';
 

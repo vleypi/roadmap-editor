@@ -1,4 +1,4 @@
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 import { INodeInfo } from '@/types/editor.interfaces';
 
 export const useNodeInfo = () => {

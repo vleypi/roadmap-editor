@@ -1,6 +1,6 @@
 'use client'
 
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 import { SECTION_TITLES } from '@/constants/editor.constant';
 import { useConnectionEditor } from '@/hooks/RightsideBar/useConnectionsEditor';
 import { useLayerDragDrop } from '@/hooks/RightsideBar/useLayerDragAndDrop';

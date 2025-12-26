@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 
 interface DragStart {
   nodeX: number;

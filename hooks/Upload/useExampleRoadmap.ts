@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { useEditorStore } from '@/store/editore.store'
+import { useEditorStore } from '@/store/editor.store'
 import { EXAMPLE_ROADMAP_DATA } from '@/constants/example.constant'
 import { IUseExampleRoadmapReturn } from '@/types/upload.interface'
 

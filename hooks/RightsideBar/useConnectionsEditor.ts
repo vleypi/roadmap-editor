@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 import { IConnection, IConnectionFormData } from '@/types/editor.interfaces';
 import { TConnectionType } from '@/types/editor.types';
 import { DEFAULT_CONNECTION_FORM } from '@/constants/editor.constant';

@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 
 interface ConnectionStart {
   nodeId: string;

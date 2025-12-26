@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { useEditorStore } from '@/store/editore.store'
+import { useEditorStore } from '@/store/editor.store'
 import { IUseFileUploadReturn } from '@/types/upload.interface'
 
 

@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 
 export const useViewportControls = (containerRef: React.RefObject<HTMLDivElement | null>) => {
   const { viewport, setViewport, updateViewport } = useEditorStore();

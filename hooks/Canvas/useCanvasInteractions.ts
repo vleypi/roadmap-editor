@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 
 export const useCanvasInteractions = (
   isDraggingNode: boolean,

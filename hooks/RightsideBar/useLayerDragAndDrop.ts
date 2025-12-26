@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { useEditorStore } from '@/store/editore.store';
+import { useEditorStore } from '@/store/editor.store';
 
 export const useLayerDragDrop = () => {
   const { nodes, moveNodeLayer } = useEditorStore();
