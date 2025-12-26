@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "components/Main/Elements/Upload/Upload.tsx", "hooks/useDragAndDrop.ts"  ],
   "exclude": ["node_modules"]
 }

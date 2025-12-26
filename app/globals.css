@@ -1,26 +1,189 @@
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020617;
+  --foreground: #f1f5f9;
+  --night-950: #020617;
+  --night-900: #0f172a;
+  --night-800: #1e293b;
+  --night-700: #334155;
+  --night-600: #475569;
+  --night-500: #64748b;
+  --night-400: #94a3b8;
+  --night-300: #cbd5e1;
+  --night-200: #e2e8f0;
+  --night-100: #f1f5f9;
+  --night-50: #f8fafc;
+  --purple-600: #8b5cf6;
+  --blue-500: #3b82f6;
+  --cyan-500: #0ea5e9;
 }
 
+/* stylelint-disable-next-line at-rule-no-unknown */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Кастомные цвета */
+  --color-night-50: var(--night-50);
+  --color-night-100: var(--night-100);
+  --color-night-200: var(--night-200);
+  --color-night-300: var(--night-300);
+  --color-night-400: var(--night-400);
+  --color-night-500: var(--night-500);
+  --color-night-600: var(--night-600);
+  --color-night-700: var(--night-700);
+  --color-night-800: var(--night-800);
+  --color-night-900: var(--night-900);
+  --color-night-950: var(--night-950);
+  
+  /* Цвета для градиентов */
+  --color-purple-600: var(--purple-600);
+  --color-blue-500: var(--blue-500);
+  --color-cyan-500: var(--cyan-500);
+  
+  /* Кастомные шрифты */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  
+  /* Анимации */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-gradient: gradient 8s ease infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+  
+  /* Keyframes */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: calc(200px + 100%) 0;
+    }
+  }
+  
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  --bg-grid-pattern: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), 
+                     linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(to right, #0f172a, #0f172a) padding-box,
+              linear-gradient(45deg, #8b5cf6, #3b82f6, #0ea5e9) border-box;
+  border: 1px solid transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+html::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.color-swatch[data-color="#8b5cf6"] { background-color: #8b5cf6; }
+.color-swatch[data-color="#3b82f6"] { background-color: #3b82f6; }
+.color-swatch[data-color="#10b981"] { background-color: #10b981; }
+.color-swatch[data-color="#f59e0b"] { background-color: #f59e0b; }
+.color-swatch[data-color="#ef4444"] { background-color: #ef4444; }
+.color-swatch[data-color="#ec4899"] { background-color: #ec4899; }
+.color-swatch[data-color="#06b6d4"] { background-color: #06b6d4; }
+.color-swatch[data-color="#7c3aed"] { background-color: #7c3aed; }
+
+.selected-color-indicator {
+  background-color: var(--selected-node-color, #8b5cf6);
+}
+
+.node-color-dot {
+  background-color: var(--node-color, #8b5cf6);
+}
+
+.sticky-fix {
+  position: -webkit-sticky; /* Для Safari */
+  position: sticky;
+  top: 2rem;
 }
